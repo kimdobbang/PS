@@ -9,3 +9,5 @@ elif s >= 60:
     print("D")
 else:
     print("F")
+
+# D조건을 빼먹어서 두번이나 오답처리됨 ㅜ^ㅜ
