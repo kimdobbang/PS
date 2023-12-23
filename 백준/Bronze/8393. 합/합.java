@@ -5,9 +5,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+//        System.out.println((n+1)*n/2); //이 식을 쓰면 아래 조건문 없어도 됨
+
         int sum = 0;
         //for(int i=0; i<n; i++) //0,1,2가 (0 ~ n-1까지)아닌 1,2,3을 더하려는것(1~n)
-        for(int i=1; i<=n; i++){
+        for (int i = 1; i <= n; i++) {
             sum += i; //sum에다 i를 계속 더하기
         }
         System.out.println(sum);
