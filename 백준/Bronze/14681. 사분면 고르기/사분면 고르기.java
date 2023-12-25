@@ -1,3 +1,5 @@
+// if 아래 esle if 가 아닌 else를 사용 했어도됨(수정) 조건이 +, - 두가지라서
+
 import java.util.Scanner;
 
 public class Main {
@@ -11,7 +13,7 @@ public class Main {
             } else {
                 System.out.println("4");
             }
-        } else if (x < 0) {
+        }else {
             if (y > 0) {
                 System.out.println("2");
             } else {
