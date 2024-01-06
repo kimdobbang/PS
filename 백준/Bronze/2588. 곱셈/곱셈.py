@@ -62,4 +62,11 @@ print(int(n1)*int(n2[2])) #3
 print(int(n1)*int(n2[1])) #4
 print(int(n1)*int(n2[0])) #5
 print(int(n1)*int(n2)) #6
+
+#6
+A = int(input())
+B = input()
+for i in range(3, 0, -1) :
+    print(A * int(B[i-1]))
+print(A * int(B))
 '''
