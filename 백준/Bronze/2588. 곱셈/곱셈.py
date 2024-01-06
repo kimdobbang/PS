@@ -17,56 +17,29 @@ print(f)
 
 '''
 남들꺼 보고 공부하자.
-# 1
-a = int(input())
-b = input()
+# # 1
+# A = int(input()) #1
+# B = input() #2
+# print(A * int(B[2])) #3
+# print(A * int(B[1])) #4
+# print(A * int(B[0])) #5
+# print(A * int(B)) #6
 
-print(A*int(B[2]))
-print(A*int(B[1]))
-print(A*int(B[0]))
-print(A*int(B[0])*100+A*int(B[1])*10+A*int(B[2]))
-
-
-#2
-# 입력부
-A = int(input())
-B = list(map(int, list(input())))
-# 출력부
-print(A * B[2]) #3
-print(A * B[1]) #4
-print(A * B[0]) #5
-print(A * B[0] * 100 + A * B[1] * 10 + A * B[2]) #6
+#2 몫과 나머지를 이용
+# num1 = int(input()) #1
+# num2 = int(input()) #2
+# print(num1 * (num2 % 10)) #3
+# print(num1 * (num2 % 100 // 10)) #4
+# print(num1 * (num2 % 1000 // 100)) #5 385를 1000으로 나눈 몫0, 나머지 385이므로  num2 //100와 같다.
+# # print(num1 * (num2 //100))
+# print(num1 * num2) #6
 
 
 #3
-num1 = int(input())
-num2 = int(input())
-print(num1 * (num2 % 10))
-print(num1 * (num2 % 100 // 10))
-print(num1 * (num2 % 1000 // 100))
-print(num1 * num2)
-
-
-#4
-a,b = int(input()), str(input())
-print(a * int(b[2]))
-print(a * int(b[1]))
-print(a * int(b[0]))
-print(a*int(b))
-
-
-#5
-n1 = input()
-n2 = input()
-print(int(n1)*int(n2[2])) #3
-print(int(n1)*int(n2[1])) #4
-print(int(n1)*int(n2[0])) #5
-print(int(n1)*int(n2)) #6
-
-#6
 A = int(input())
 B = input()
 for i in range(3, 0, -1) :
     print(A * int(B[i-1]))
 print(A * int(B))
+
 '''
