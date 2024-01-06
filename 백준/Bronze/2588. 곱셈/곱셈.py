@@ -35,7 +35,7 @@ print(f)
 # print(num1 * num2) #6
 
 
-#3
+#3 반복문
 A = int(input())
 B = input()
 for i in range(3, 0, -1) :
