@@ -62,3 +62,4 @@ print(int(n1)*int(n2[2])) #3
 print(int(n1)*int(n2[1])) #4
 print(int(n1)*int(n2[0])) #5
 print(int(n1)*int(n2)) #6
+'''
