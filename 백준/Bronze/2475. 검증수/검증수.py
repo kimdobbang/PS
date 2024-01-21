@@ -21,11 +21,13 @@ numbers = list(map(int, input().split()))
 
 def sqr(lst):
     return (i * i for i in lst)
+    
+# def func(lst2):
+#     return sum(lst2) % 10
+sol = lambda lst2: sum(lst2) % 10
 
-def func(lst2):
-    return sum(lst2) % 10
+print(sol(sqr(numbers)))
 
-print(func(sqr(numbers)))
 
 
 # 2   이건 위에서 내가 작성한 코드를 chat gpt가 수정해주었다.ㅎㅎ
