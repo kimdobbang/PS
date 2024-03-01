@@ -14,7 +14,7 @@ def count(r, c):
 
 # 좌표 공간 생성
 N = int(input())
-arr = [[0]*1000 for _ in range(1000)]
+arr = [[0]*101 for _ in range(101)]
 
 for _ in range(N):
     X, Y = map(int, input().split())
