@@ -1,11 +1,6 @@
-## 피보나치수 5
-n = int(input())
+def fibo(x):
+    if x <= 1:  # 0, 1의 경우
+        return x
+    return fibo(x - 2) + fibo(x - 1)
 
-def yh_babo(x):
-    if x == 0:
-        return 0
-    elif x == 1:
-        return 1
-    return yh_babo(x - 2) + yh_babo(x - 1)
-
-print(yh_babo(n))
+print(fibo(int(input())))  # n입력받아 fibo함수 호출
