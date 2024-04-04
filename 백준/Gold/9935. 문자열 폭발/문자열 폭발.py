@@ -1,3 +1,4 @@
+import sys; input = sys.stdin.readline
 str = list(input().rstrip())
 check = list(input().rstrip())
 
@@ -9,8 +10,8 @@ for i in str:
 
 # 반복문 종료 후 출력
 if stack:
-    for i in stack:
-        print(*i,end='')
-    # print(''.join(stack))
+    #for i in stack:
+    #    print(*i,end='')
+    print(''.join(stack))
 else:
     print("FRULA")
