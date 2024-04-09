@@ -1,15 +1,12 @@
+n = int(input())
 
-N = int(input())
-
-out = False  # 특정 조건 일 때 바깥 for문까지 종료하도록 함
-for i in range(N // 3 + 1):
-    for j in range(N // 5 + 1):
-        num = 3*i + 5*j
-        if num == N:
-            print(i + j)
-            out = True  # 답 찾으면 true가 되면서 바깥 for문 종료
-            break
-    if (out):
+ans = 0
+while n >= 0:
+    if n % 5 == 0:  # 5의 배수이면
+        ans += n // 5  # 5로 나눈 몫을 구해야 정수가 됨
+        print(ans)
         break
-if (not out):  # 답 못잦고 반복문 끝까지 순회 종료하면 -1 출력
+    n -= 3
+    ans += 1  # 5의 배수가 될 때까지 설탕-3, 봉지+1
+else:
     print(-1)
