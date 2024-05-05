@@ -7,6 +7,7 @@ import java.util.StringTokenizer;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
 
         // 띄어 쓰기가 없는 2차원 배열 생성 및 입력
         char[][] arr = new char[5][15];
@@ -23,8 +24,10 @@ public class Main {
                 if (arr[i][j] == 0){ // 캐릭터의 기본값이 아스키코드 0
                     continue;
                 }
-                System.out.print(arr[i][j]);
+                sb.append(arr[i][j]);
             }
         }
+
+        System.out.println(sb);
     }
 }
