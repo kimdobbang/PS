@@ -23,20 +23,20 @@ public class Main {
 
         // K국가와 등수 비교
         int cnt = 0;
-        for (int i = 0; i < N; i++) {
+        for (int i = 1; i < N + 1; i++) {
             // 금 많은국가
             if (arr[K][0] < arr[i][0]) {
-                cnt += 1;
+                cnt++;
                 //금 동점일때
             } else if (arr[K][0] == arr[i][0]) {
                 // 은 많은국가
                 if (arr[K][1] < arr[i][1]) {
-                    cnt += 1;
+                    cnt++;
                 // 은 동점일 때
                 } else if (arr[K][1] == arr[i][1]) {
                     // 동 많은 국가
                     if (arr[K][2] < arr[i][2]) {
-                        cnt += 1;
+                        cnt++;
                     }
                 }
             }
