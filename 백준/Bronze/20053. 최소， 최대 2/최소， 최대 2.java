@@ -27,12 +27,7 @@ public class Main {
 					min = num;
 				}
 			}
-			// 마지막 테스트 케이스에서는 개행을 넣지 않기
-            if (t == T - 1) {
-                sb.append(min).append(" ").append(max);
-            } else {
-                sb.append(min).append(" ").append(max).append("\n");
-            }
+            sb.append(min).append(" ").append(max).append("\n");
 		}
 		System.out.print(sb);
 	}
