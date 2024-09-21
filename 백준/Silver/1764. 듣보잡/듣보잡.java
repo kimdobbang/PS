@@ -16,30 +16,30 @@ public class Main {
 		int m = Integer.parseInt(st.nextToken());
 
 		HashSet<String> noListen = new HashSet<>();
-		HashSet<String> noSee = new HashSet<>();
-
+		ArrayList<String> answer = new ArrayList<>();
+        
+        // 듣지못한애 저장
 		for (int i = 0; i < n; i++) {
 			noListen.add(br.readLine());
 		}
-
+        
+        // 정답리스트에 보도못한애 중 듣지못한애 저장
 		for (int i = 0; i < m; i++) {
-			noSee.add(br.readLine());
-		}
-
-		ArrayList<String> answer = new ArrayList<>();
-		for (String s : noListen) {
-			if (noSee.contains(s)) {
+			String s = br.readLine();
+			if (noListen.contains(s)) {
 				answer.add(s);
 			}
 		}
-
+        
+        //정렬
 		Collections.sort(answer);
-
+        
+        
+       // 출력
 		sb.append(answer.size()).append("\n");
 		for (String s : answer) {
 			sb.append(s).append("\n");
 		}
-
 		System.out.println(sb);
 	}
 }
